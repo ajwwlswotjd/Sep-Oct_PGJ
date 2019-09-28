@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<link rel="stylesheet" href="./style.css">
+	<meta charset="UTF-8">
+	<title>한국어 너무 어렵자너...</title>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<video src="" id="main-audio" preload="auto">
+		
+	</video>
+	<!-- 로그인 팝업-->
+	<section id="login">
+		<div class="login-close">&times;</div>
+		<div class="login-container">
+			<h1>
+				LOGIN
+			</h1>
+			<p class="lorem">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, voluptatem, qui! Neque doloribus sed ea id
+			</p>
+			<div class="l-input-group">
+				<input type="text" id="id">
+				<label for="id">
+					Username
+				</label>
+			</div>
+
+			<div class="l-input-group">
+				<input type="password" id="password">
+				<label for="password">
+					Password
+				</label>
+			</div>
+			<button id="login-btn">SIGN IN</button>
+			<p class="thx">
+				이용해주셔서 감사합니다!
+			</p>
+		</div>
+	</section>
+	<!-- 로그인 팝업 끝 -->
+
+	<!-- 헤더 -->
+	<header>
+		<div class="header-container">
+			<!--심벌 로고 -->
+			<a href="#">
+				<img src="logo.jpg" alt="asdf" id="logo">
+			</a>
+			<!--심벌 로고 끝 -->
+
+			<!-- 검색 -->
+			<div class="input-group">
+				<input type="text" id="search" placeholder="검색어를 입력하세요.">
+				<button type="submit" id="search-btn">
+					<i class="fas fa-search"></i>
+				</button>
+			</div>
+			<!-- 검색 끝 -->
+
+			<!-- 내비게이션 -->
+			<nav>
+				<li><a href="#">
+					<i class="fas fa-home"></i>
+				</a></li>
+				<li><a href="#">
+					<i class="fas fa-list"></i>
+					<!-- 대기열 -->
+				</a></li>
+				<li><a href="#">
+					<i class="fa fa-folder"></i>
+					<!-- 라이브러리 -->
+				</a></li>
+				<li><a href="#">
+					<i class="fas fa-sign-in-alt"></i>
+				</a></li>
+			</nav>
+			<!-- 내비게이션  끝-->
+		</div>
+	</header>
+	<!-- 헤더 끝-->
+
+	<!-- 뮤직리스트 -->
+	
+	<section id="main">
+		<div class="main-index">
+			<ul class="list-recommend">
+				<li class="list-top">
+					<h1>추천 음악</h1>
+				</li>
+
+				<li class="list-bottom">
+					
+				</li>
+			</ul>
+
+			<ul class="list-ballad">
+				<li class="list-top">
+					<h1>발라드</h1>
+				</li>
+
+				<li class="list-bottom">
+					
+				</li>
+			</ul>
+
+			<ul class="list-dance">
+				<li class="list-top">
+					<h1>댄스</h1>
+				</li>
+
+				<li class="list-bottom">
+					
+				</li>
+			</ul>
+			<ul class="list-hiphop">
+				<li class="list-top">
+					<h1>랩/힙합</h1>
+				</li>
+
+				<li class="list-bottom">
+					
+				</li>
+			</ul>
+			<ul class="list-fb">
+				<li class="list-top">
+					<h1>포크/블루스</h1>
+				</li>
+
+				<li class="list-bottom">
+					
+				</li>
+			</ul>
+			<ul class="list-pop">
+				<li class="list-top">
+					<h1>POP</h1>
+				</li>
+
+				<li class="list-bottom">
+					
+				</li>
+			</ul>
+			<ul class="list-rm">
+				<li class="list-top">
+					<h1>록/메탈</h1>
+				</li>
+
+				<li class="list-bottom">
+					
+				</li>
+			</ul>
+			<ul class="list-rnb">
+				<li class="list-top">
+					<h1>R&B/Soul</h1>
+				</li>
+
+				<li class="list-bottom">
+					
+				</li>
+			</ul>
+		</div>
+		<div class="main-library">
+				<ul class="list-recent">
+					<li class="list-top">
+						<h1>최근 재생한 음악</h1>
+					</li>
+					<li class="list-bottom">
+						<div class="music bg-band">
+							<div class="music-dark">
+								<div class="show-box">
+									<span class="show-title">
+										BAND
+									</span>
+									<br>
+									<span class="show-singer">
+										창모(CHANGMO),Hash Swan,ASH ISLAND,김효은
+									</span>
+								</div>
+
+								<i class="far fa-play-circle dark-play"></i>
+							</div>
+						</div>
+						<div class="music bg-imjmwdp">
+							<div class="music-dark">
+								<div class="show-box">
+									<span class="show-title">
+										IMJMWDP
+									</span>
+									<br>
+									<span class="show-singer">
+										기리보이 외 9명
+									</span>
+								</div>
+
+								<i class="far fa-play-circle dark-play"></i>
+							</div>
+						</div>
+						<div class="music bg-119remix">
+							<div class="music-dark">
+								<div class="show-box">
+									<span class="show-title">
+										119 REMIX
+									</span>
+									<br>
+									<span class="show-singer">
+										Various Artist (그레이 외 50명)
+									</span>
+								</div>
+
+								<i class="far fa-play-circle dark-play"></i>
+							</div>
+						</div>
+						<div class="music bg-ash">
+							<div class="music-dark">
+								<div class="show-box">
+									<span class="show-title">
+										Paranoid
+									</span>
+									<br>
+									<span class="show-singer">
+										ASH ISLAND
+									</span>
+								</div>
+
+								<i class="far fa-play-circle dark-play"></i>
+							</div>
+						</div>
+						<div class="music bg-aya">
+							<div class="music-dark">
+								<div class="show-box">
+									<span class="show-title">
+										아이야 (feat.Beenzino)
+									</span>
+									<br>
+									<span class="show-singer">
+										창모 (CHANGMO)
+									</span>
+								</div>
+
+								<i class="far fa-play-circle dark-play"></i>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+				<h1 class="playList-title">플레이리스트</h1>
+				<div class="playList">
+					<li class="bg-aya">
+						<div class="playList-dark">
+							<span>수록곡 : 10곡</span>
+							<br>
+							<span>내맘대로 플레이리스트1</span>
+						</div>
+					</li>
+					<li class="bg-band">
+						<div class="playList-dark">
+							<span>수록곡 : 2곡</span>
+							<br>
+							<span>내맘대로 플레이리스트2</span>
+						</div>
+					</li>
+					<li class="bg-ash">
+						<div class="playList-dark">
+							<span>수록곡 : 5곡</span>
+							<br>
+							<span>내맘대로 플레이리스트3</span>
+						</div>
+					</li>
+					<li class="bg-ben">
+						<div class="playList-dark">
+							<span>수록곡 : 12곡</span>
+							<br>
+							<span>내맘대로 플레이리스트4</span>
+						</div>
+					</li>
+					<li class="bg-imjmwdp">
+						<div class="playList-dark">
+							<span>수록곡 : 2곡</span>
+							<br>
+							<span>내맘대로 플레이리스트5</span>
+						</div>
+					</li>
+					<li class="bg-mino">
+						<div class="playList-dark">
+							<span>수록곡 : 5곡</span>
+							<br>
+							<span>내맘대로 플레이리스트6</span>
+						</div>
+					</li>
+					<li class="bg-pkb">
+						<div class="playList-dark">
+							<span>수록곡 : 6곡</span>
+							<br>
+							<span>내맘대로 플레이리스트7</span>
+						</div>
+					</li>
+				</div></div>
+		<div class="main-queue">
+					<div class="queue-container">
+						<h1>대기열</h1>
+						<table class="queue-table">
+							<thead>
+								<tr>
+									<td width="10%" class="qt-cover">
+										커버
+									</td>
+									<td width="30%" class="qt-title">
+										제목
+									</td>
+									<td width="30%" class="qt-artist">
+										아티스트
+									</td>
+									<td width="20%" class="qt-album">
+										앨범 제목
+									</td>
+									<td width="10%" class="qt-runtime">
+										전체 시간
+									</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="highlite">
+									<td class="qttb-cover bg-119remix"></td>
+									<td>119 REMIX</td>
+									<td>Various Artist</td>
+									<td>119 REMIX</td>
+									<td>20:40</td>
+								</tr>
+								<tr>
+									<td class="qttb-cover bg-band"></td>
+									<td>BAND</td>
+									<td>창모(CHANGMO),Hash Swan,ASH ISLAND,김효은</td>
+									<td>BAND</td>
+									<td>04:05</td>
+								</tr>
+								<tr>
+									<td class="qttb-cover bg-aya"></td>
+									<td>아이야 (feat.Beenzino)</td>
+									<td>창모 (CHANGMO)</td>
+									<td>돈 벌 시간 3</td>
+									<td>03:53</td>
+								</tr>
+								<tr>
+									<td class="qttb-cover bg-selfmade"></td>
+									<td>Selfmade Orange (Feat. SUPERBEE)</td>
+									<td>창모 (CHANGMO)</td>
+									<td>닿는 순간</td>
+									<td>03:52</td>
+								</tr>
+							</tbody>
+						</table>
+					</div></div>
+		<div class="main-playlist">
+			<div class="pl-top">
+				<div class="cover"></div>
+				<div class="pl-text-wrap">
+					<h1>평가전 디자인 테스트</h1>
+					<p class="pl-total">
+						총 101곡
+					</p>
+					<p class="pl-cover">플레이리스트 커버 : BAND</p>
+				</div>
+			</div>
+			<div class="pl-bottom">
+				<h1>곡 목록</h1>
+				<div class="pl-btn-container">
+					<button id="add-quene">
+						<i class="fas fa-folder-plus"></i>
+						대기열 추가
+					</button>
+					<button id="play-now">
+						<i class="fas fa-play"></i>
+						전체 재생
+					</button>
+				</div>
+				<table>
+					<thead>
+						<tr>
+							<th width="10%">커버</th>
+							<th width="45%">곡</th>
+							<th width="45%">아티스트</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td class="t-cover bg-band"></td>
+							<td class="t-name">BAND</td>
+							<td class="t-artist">창모(CHANGMO),Hash Swan,ASH ISLAND,김효은</td>
+						</tr>
+						<tr>
+							<td class="t-cover bg-imjmwdp"></td>
+							<td class="t-name">IMJMWDP</td>
+							<td class="t-artist">IMJMWDP</td>
+						</tr>
+						<tr>
+							<td class="t-cover bg-aya"></td>
+							<td class="t-name">아이야(Feat.beenzino)</td>
+							<td class="t-artist">CHANGMO</td>
+						</tr>
+						<tr>
+							<td class="t-cover bg-119remix"></td>
+							<td class="t-name">119 REMIX</td>
+							<td class="t-artist">Various Artist</td>
+						</tr>
+						<tr>
+							<td class="t-cover bg-ash"></td>
+							<td class="t-name">Paranoid</td>
+							<td class="t-artist">ASH ISLAND</td>
+						</tr>
+						<tr>
+							<td class="t-cover bg-dding"></td>
+							<td class="t-name">띵 (Prod. By 기리보이)</td>
+							<td class="t-artist">Jvcki Wai, 영비, Osshun Gum, 한요한</td>
+						</tr>
+					</tbody>
+				</table>
+			</div></div>					
+	</section>
+
+			<!-- 뮤직리스트 끝  -->
+
+			<footer>
+		<!--
+			현재 재생중인 음악의 앨범 커버 이미지
+			제목,재생시간/전체시간, 재생 버튼, 이전곡 버튼, 다음곡 버튼
+			탐색 슬라이더, 반복재생 버튼, 볼륨조절 버튼, 가사 띄우기 버튼
+			음악 재생 영역 호버효과
+			재생,이전/다음곡,탐색 슬라이더, 반복 재생, 볼륨조절 슬라이더,가사보기 버튼에 호버효과
+			음악재생 영역은 페이지 이동해도 보여져야함-++++
+		-->		
+		<div class="footer-container">
+			
+			<!-- 음악 커버 및 이름 -->
+			<div class="music-container">
+				<img src="cover.jpg" alt="cover" id="cover">
+				<div class="music-info">
+					<p class="music-title">BAND</p>
+					<small class="music-singer">
+						창모 (CHANGMO), Hash Swan, ASH ISLAND,김효은
+					</small>
+				</div>
+			</div>
+			<!-- 음악 커버 및 이름 끝 -->
+
+			<!-- 가운데 컨트룰러 부분 -->
+			<div class="control-container">
+				<div class="control-top">
+					<div class="top-controller">
+						<button id="repeat" class="no">반복 안함</button>
+						<i class="fas fa-step-backward" id="back"></i>
+						<i class="fas fa-play" id="play-stop"></i>
+						<i class="fas fa-step-forward" id="forward"></i>
+						<i class="fas fa-volume-up" id="volume"></i>
+						<span class="volume-span">50%</span>
+						<input type="range" id="sound-range" value="50">
+					</div>
+				</div>
+
+				<div class="control-bottom">
+					<div class="bottom-controller">
+						<span class="current-time">00:00</span>
+						<input type="range" id="music-range" min="1" max="1000" value="0">
+						<span class="total-time">00:00</span>
+					</div>
+				</div>
+			</div>
+			<!-- 가운데 컨트룰러 부분 끝-->
+
+			<!-- 우측 가사 영역 -->
+			<div class="lyrics-container">
+				<div class="lyrics">
+					<i class="fas fa-align-justify onLyrics" id="lyrics-btn"></i>
+					<div class="span-container">
+						<span class="lyrics-current">
+							그런데 시간이 없어 그시간에 돈벌어 오천만원은 더 떙겨 야 내 맘이 편할거
+						</span>
+						<span class="lyrics-next">
+							바로 앨범 한장 더 너나 놀고 자빠져, 다행이야 내옆엔 개 년이 아닌 너라서
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- 우측 가사 영역 끝 -->
+		</div></footer>
+	</body>
+	</html>
+
+
+	<script>
+						/////////////////////////////////////////
+					   // 									 ////
+					  // 									// //
+					 // 								   //  //
+					// 								   	  //   //
+				   // 								     //    //
+				  // 								    //     //
+				 // 								   //      //
+				// 								      //       //
+			   // 								     //        //
+			  // 								    //         //
+			  ///////////////////////////////////////          //
+			  // 								   //          //
+			  // 								   //          //
+			  // 								   //          //
+			  // 								   //          //
+			  // 								   //         //
+			  // 								   //        // 
+			  // 								   //       //   
+			  // 								   //      //   
+			  // 								   //     //     
+			  // 								   //    //      
+			  // 								   //   //
+			  // 								   //  //
+			  // 								   // //
+			  // 								   ////		  ////////////////////////////////////////
+
+			  document.querySelector("#lyrics-btn").addEventListener("click",(e)=>{
+			  	if(e.target.classList.contains("onLyrics")) e.target.classList.remove("onLyrics");
+			  	else e.target.classList.add("onLyrics");
+			  });
+
+
+					//////////////////////////////
+					//            //            //
+					//            //            //
+					//    OwO     //   ㅡ3ㅡ    //
+					//            //            //
+					//////////////////////////////
+					//            //            //
+					//            //            //
+					//   ㅇㅅㅇ   //     ㅇㅁㅇ  //
+					//           //             //
+					//////////////////////////////
+					document.querySelectorAll(".l-input-group > input").forEach(x=>{
+						let label = x.parentNode.querySelector("label");
+						x.addEventListener("focus",(e)=>{
+							x.style.borderBottom = `1px solid #fff`;
+							x.style.color = '#fff';
+							label.style.top = '-17px';
+							label.style.fontSize = "13px";
+						});
+
+						x.addEventListener("focusout",(e)=>{
+							if(x.value == ""){
+								x.style.borderBottom = `1px solid #fff5`;
+								x.style.color = '#fff5';
+								label.style.top = '0px';
+								label.style.color = '#fff5';
+								label.style.fontSize = "14px";	
+							}
+						});
+					});
+				</script>

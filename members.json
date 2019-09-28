@@ -1,0 +1,44 @@
+{
+	"members": [
+		{
+			"id": "user1",
+			"password": "user1"
+		},
+		{
+			"id": "user2",
+			"password": "user2"
+		},
+		{
+			"id": "user3",
+			"password": "user3"
+		},
+		{
+			"id": "user4",
+			"password": "user4"
+		},
+		{
+			"id": "user5",
+			"password": "user5"
+		},
+		{
+			"id": "user6",
+			"password": "user6"
+		},
+		{
+			"id": "user7",
+			"password": "user7"
+		},
+		{
+			"id": "user8",
+			"password": "user8"
+		},
+		{
+			"id": "user9",
+			"password": "user9"
+		},
+		{
+			"id": "user10",
+			"password": "user10"
+		}
+	]
+}
